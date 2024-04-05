@@ -1,72 +1,70 @@
-# Getting Started with Create React App
+# Todo App with Productivity Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application that combines a Todo list with a Pomodoro-style productivity timer. It allows users to manage their tasks and work in focused sessions with regular breaks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **User Login Simulation**
+   - Fetch and list users from the `/users` endpoint
+   - Allow users to select a name to "log in" (no password required)
+   - Store the selected user in the application's state
 
-### `npm start`
+2. **Todo Management**
+   - Fetch todos from the `/todos` endpoint where the `userId` matches the logged-in user
+   - Display todos with title and completion status
 
-###  Also watch in the live here 🔥[https://todo-task1.vercel.app/]
+3. **Productivity Timer**
+   - Implement a timer for focused work sessions lasting 15 seconds
+   - After a work session, prompt the user to take a 5-second break
+   - Suggest a longer break of 10 seconds after every 2 work sessions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Styling and Layout**
+   - Create a user-friendly and intuitive UI
+   - Ensure the app is responsive on both desktop and mobile devices
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. **Filtering and Editing**
+   - Added the filters to view all, completed, or incomplete todos
 
-### `npm test`
+### Enhanced Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Timer Controls**: Start, pause, and reset the timer. Maintain timer state during navigation.
+- **Session Tracking**: Keep count of completed work sessions.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the application locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository: `git clone https://github.com/your-username/todo-app.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open your browser and navigate to `http://localhost:3000`
+5. want to see in the live 🔥 `https://todo-task1.vercel.app/`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
+- Vecel
+-
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- React Router
+- React Boostrap
+- Boostrap
+- React Icons
+- Axios (HTTP client library)
+- CSS ( CSS-in-JS solution like styled-components)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application uses the following API endpoints:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `/users`: Fetches a list of users
+- `/todos`: Fetches todos for a specific user
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
