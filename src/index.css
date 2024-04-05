@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .selectuserLoginCard{
+        width: 100%;
+        padding: 20px;
+        border: 1px solid ;
+        margin: auto;
+    }
+    .selectuserLoginCardSec{
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .selectuserLoginCard{
+        font-family: "Noto Sans", sans-serif;
+        font-style: italic;
+}
+    .selectuserLoginCard  h1{
+        font-style: italic;
+        font-size: 26px;
+    }
+    .selectuserLoginCard form label{
+        display: block;
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+    .selectuserLoginCard form select{
+       width: 100%;
+       padding: 12px;
+       outline: none;
+       font-style: italic;
+    }
+    .selectuserLoginCard form{
+        margin-bottom: 20px;
+    }
+    .selectuserLoginCard button{
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        outline: none;
+        font-style: italic;
+    }
+
+.TodoSection{
+    border: 1px solid;
+    padding: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.Cardtitle{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.TodoSectionInnercol{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.TodoSectionInnercol input{
+    width: 24px;
+    height: 24px;
+    
+}
+.TodoSectionInnercol label{
+  font-size: 16px;
+  font-style: italic;
+}
+.TaskAndRadio{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.TodoSectionInnercol{
+    padding: 10px 0;
+}
+.TodoSectionInnercol button{
+    outline: none;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+    font-style: italic;
+}
+.CardRowNowrap{
+    flex-wrap: nowrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
